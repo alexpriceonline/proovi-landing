@@ -1,0 +1,23 @@
+{
+  "name": "StorySumoLanding",
+  "version": "1.0.0",
+  "description": "The StorySumo landing page",
+  "author": "Alex Price <hi@alexpriceonline.com>",
+  "contributors": [
+    {
+      "name": "Alex Price",
+      "email": "hi@alexpriceonline.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexpriceonline/storysumo-landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexpriceonline/storysumo-landing/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}

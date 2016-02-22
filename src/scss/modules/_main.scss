@@ -1,0 +1,16 @@
+// ==============================================
+// Main section styles
+// ==============================================
+
+.main {
+    color: $white;
+    margin: 0 auto;
+    padding: rem($gutter 0);
+    width: rem(475px);
+}
+
+    .main-title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        margin: rem($gutter 0);
+    }

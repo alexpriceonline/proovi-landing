@@ -1,0 +1,21 @@
+// ==============================================
+// Project colours
+// ==============================================
+
+// Easy opacity mixins
+@function blue($opacity:1) {
+    @return rgba(51, 77, 92, $opacity)
+}
+
+@function white($opacity:1) {
+    @return rgba(255, 255, 255, $opacity)
+}
+
+@function green($opacity:1) {
+    @return rgba(69, 178, 157, $opacity)
+}
+
+// Main project colours
+$blue:    blue();
+$white:   white();
+$green:   green();

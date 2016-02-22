@@ -1,0 +1,10 @@
+// ==============================================
+// Button styles
+// ==============================================
+
+.button {
+    @include border-radius(3px);
+    background: $green;
+    padding: rem(10px 16px);
+    border: none;
+}

@@ -1,0 +1,19 @@
+// ==============================================
+// Header styles
+// ==============================================
+
+.header {
+    background: $white;
+    height: rem(300px);
+    text-align: center;
+}
+
+    .header-logo {
+        padding: rem($gutter*2 0 $gutter);
+    }
+
+    .header-subtitle {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color: $blue;
+    }
