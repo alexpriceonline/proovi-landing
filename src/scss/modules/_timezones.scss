@@ -1,0 +1,27 @@
+// ==============================================
+// Timezones styles
+// ==============================================
+
+.timezones {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .timezones-zone {
+    flex: 1 0 25%;
+    font-family: 'Brandon Grotesque';
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+    .timezones-zone-acronym {
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .timezones-zone-time {
+      font-size: 18px;
+      font-weight: 700;
+    }

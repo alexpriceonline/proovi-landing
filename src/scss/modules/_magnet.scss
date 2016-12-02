@@ -1,0 +1,53 @@
+// ==============================================
+// Magnet section styles
+// ==============================================
+
+.magnet {
+  background: $blue;
+  color: $white;
+  padding: 20px;
+}
+
+  .magnet-title {
+    font-family: 'Brandon Grotesque';
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .magnet-content {
+    margin: 0 0 10px;
+  }
+
+    .magnet-content-title {
+      font-family: 'Proxima Nova';
+      font-size: 24px;
+      font-weight: 300;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    .magnet-content-list {
+      list-style-type: none;
+      margin: 0 0 20px 20px;
+      padding: 0;
+    }
+
+      .magnet-content-list-item {
+        font-family: 'Proxima Nova';
+        font-weight: 300;
+        margin: 0 0 10px;
+        padding: 0 0 0 10px;
+        position: relative;
+      }
+
+      .magnet-content-list-item::before {
+        content: 'P';
+        left: -10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
