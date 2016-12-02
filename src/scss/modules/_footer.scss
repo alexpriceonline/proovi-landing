@@ -1,0 +1,42 @@
+// ==============================================
+// Footer section styles
+// ==============================================
+
+.footer {
+  padding: 20px;
+}
+
+  .footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 0 30px;
+    padding: 0;
+  }
+
+    .footer-list-item {
+      color: $blue;
+      flex: 1 0 50%;
+      font-family: 'Brandon Grotesque';
+      font-size: 14px;
+      font-weight: 700;
+      padding: 5px 0 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+      .footer-list-item-link {
+        border-bottom: 1px dashed blue(0.4);
+        color: $blue;
+        text-decoration: none;
+      }
+
+      .footer-list-item-link:hover {
+        border-bottom: 1px solid blue();
+      }
+
+  .footer-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }
