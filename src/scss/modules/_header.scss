@@ -3,17 +3,44 @@
 // ==============================================
 
 .header {
-    background: $white;
-    height: rem(300px);
-    text-align: center;
+  background: $white;
+  text-align: center;
+
+  @include break(medium) {
+    height: 60px;
+  }
 }
 
-    .header-logo {
-        padding: rem($gutter*2 0 $gutter);
+  .header-logo {
+    padding: 20px;
+    width: 60%;
+  }
+
+  .header-faces {
+    display: flex;
+    margin: 20px 50px;
+    position: relative;
+  }
+
+  .header-faces::before {
+    content: 'Presented by:';
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.3;
+    position: absolute;
+    text-align: center;
+    top: -26px;
+    width: 100%;
+  }
+
+    .header-faces-member {
+      flex: 1 0 calc(100% / 3);
+      padding: 10px 14px;
     }
 
-    .header-subtitle {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        color: $blue;
-    }
+      .header-faces-member-image {
+        @include border-radius(99px);
+        width: 100%;
+      }

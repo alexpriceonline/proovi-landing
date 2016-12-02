@@ -1,29 +1,27 @@
 // ==============================================
-// FrontendGems: Style imports
-// Created by: Alex Price (@alexpriceonline)
+// Proovi: Style imports
+// Created by: Alex Price (alexpriceonline.com)
 // Contributors: []
 // ==============================================
 
-// Basic imports
-@import "vendor/normalize";
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:400,700,300);
-@import "variables";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700);
+
+// Basic imports
+@import 'vendor/normalize';
+@import 'variables';
 
 // Mixin imports
-@import "mixins/border-radius";
-@import "mixins/break";
-@import "mixins/clearfix";
-@import "mixins/font-size";
-@import "mixins/rem";
+@import 'mixins/border-radius';
+@import 'mixins/break';
+@import 'mixins/clearfix';
 
 // Base imports
-@import "base/colours";
-@import "base/global";
+@import 'base/colours';
+@import 'base/global';
 
 // Module imports
-@import "modules/button.scss";
-@import "modules/header.scss";
-@import "modules/hidden.scss";
-@import "modules/input.scss";
-@import "modules/label.scss";
-@import "modules/main.scss";
+@import 'modules/button';
+@import 'modules/header';
+@import 'modules/hero';
+@import 'modules/webinarjam';

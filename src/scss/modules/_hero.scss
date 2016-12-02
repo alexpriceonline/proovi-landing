@@ -1,0 +1,46 @@
+// ==============================================
+// Hero styles
+// ==============================================
+
+.hero {
+  background: linear-gradient(0deg, $grey, $white);
+  color: $blue;
+  padding: 0 20px;
+  text-align: center;
+}
+
+  .hero-preheadline {
+    display: inline-block;
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 40px 20px;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .hero-preheadline::before,
+  .hero-preheadline::after {
+    border: 1px solid $blue;
+    content: '';
+    display: block;
+    position: absolute;
+    right: calc(100% - 10px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+  }
+
+  .hero-preheadline::after {
+    left: calc(100% - 10px);
+    right: auto;
+  }
+
+  .hero-headline {
+    font-family: 'Brandon Grotesque';
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
