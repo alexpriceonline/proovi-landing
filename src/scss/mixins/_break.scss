@@ -4,22 +4,22 @@
 
 @mixin break($size) {
   @if $size == small {
-    @media only screen and (min-width: rem($small)) {
+    @media only screen and (min-width: $small) {
       @content;
     }
   }
   @else if $size == medium {
-    @media only screen and (min-width: rem($medium)) {
+    @media only screen and (min-width: $medium) {
       @content;
     }
   }
   @else if $size == large {
-    @media only screen and (min-width: rem($large)) {
+    @media only screen and (min-width: $large) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-width: rem($size)) {
+    @media only screen and (min-width: $size) {
       @content;
     }
   }

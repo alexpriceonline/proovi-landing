@@ -17,6 +17,13 @@
     margin: 0 40px 20px;
     padding: 0 20px;
     position: relative;
+
+    @include break(medium) {
+      font-size: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: $large;
+    }
   }
 
   .hero-preheadline::before,
@@ -43,4 +50,11 @@
     margin: 0 0 20px;
     padding: 0 20px;
     text-transform: uppercase;
+
+    @include break(medium) {
+      font-size: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: $large;
+    }
   }

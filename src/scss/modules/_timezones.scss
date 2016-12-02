@@ -5,6 +5,12 @@
 .timezones {
   display: flex;
   flex-wrap: wrap;
+
+  @include break(large) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 990px;
+  }
 }
 
   .timezones-zone {

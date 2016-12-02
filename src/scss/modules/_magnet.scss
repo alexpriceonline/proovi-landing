@@ -16,10 +16,37 @@
     padding: 0;
     text-align: center;
     text-transform: uppercase;
+
+    @include break(medium) {
+      font-size: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: $large;
+    }
+  }
+
+  .magnet-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: $large;
+  }
+
+  .magnet-graphic {
+    flex: 1 0 100%;
+
+    @include break(small) {
+      flex: 1 0 50%;
+    }
   }
 
   .magnet-content {
+    flex: 1 0 100%;
     margin: 0 0 10px;
+
+    @include break(small) {
+      flex: 1 0 50%;
+    }
   }
 
     .magnet-content-title {

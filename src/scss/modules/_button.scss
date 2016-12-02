@@ -4,13 +4,13 @@
 
 .button {
   @include border-radius(10px);
-  background: transparent;
-  border: 5px solid $blue;
-  box-shadow: 0 2px 2px blue(0.4);
-  color: $blue;
+  background: $green;
+  border: 0;
+  border-bottom: 3px solid darken($green, 15%);
+  color: $white;
   font-size: 20px;
   margin: 0;
-  padding: 10px 16px 8px 50px;
+  padding: 12px 20px 10px 54px;
   position: relative;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -18,10 +18,10 @@
 
 .button::before {
   @include border-radius(99px);
-  background: $green;
+  background: $white;
   content: '';
   height: 30px;
-  left: 10px;
+  left: 12px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -29,12 +29,12 @@
 }
 
 .button::after {
-  border-color: transparent transparent transparent $white;
+  border-color: transparent transparent transparent $green;
   border-style: solid;
   border-width: 8px 0 8px 10px;
   content: '';
   height: 0;
-  left: 22px;
+  left: 24px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -49,22 +49,17 @@
 
 .button.mod-magnet {
   @include border-radius(7px);
-  background: $green;
-  border: 0;
-  border-bottom: 3px solid darken($green, 15%);
-  color: $white;
   font-size: 17px;
   padding: 12px 16px 10px 50px;
 }
 
 .button.mod-magnet::before {
-  background: $white;
   height: 26px;
   left: 12px;
   width: 26px;
 }
 
 .button.mod-magnet::after {
-  border-left-color: $green;
   border-width: 6px 0 6px 9px;
+  left: 22px;
 }

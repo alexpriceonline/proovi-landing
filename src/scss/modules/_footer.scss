@@ -12,6 +12,12 @@
     list-style-type: none;
     margin: 0 0 30px;
     padding: 0;
+
+    @include break(large) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 990px;
+    }
   }
 
     .footer-list-item {
@@ -23,6 +29,10 @@
       padding: 5px 0 10px;
       text-align: center;
       text-transform: uppercase;
+
+      @include break(medium) {
+        flex: 1 0 25%;
+      }
     }
 
       .footer-list-item-link {
@@ -39,4 +49,12 @@
     display: block;
     margin: auto;
     width: 50%;
+
+    @include break(small) {
+      width: 30%;
+    }
+
+    @include break(medium) {
+      width: 140px;
+    }
   }
