@@ -5,6 +5,7 @@
 .timezones {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
   @include break(large) {
     margin-left: auto;
@@ -13,12 +14,30 @@
   }
 }
 
+.timezones::after {
+  border-color: $white transparent transparent;
+  border-style: solid;
+  border-width: 7px 10px 0;
+  bottom: -7px;
+  content: '';
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 0;
+}
+
   .timezones-zone {
     flex: 1 0 25%;
     font-family: 'Brandon Grotesque';
     margin: 0;
     padding: 10px;
     text-align: center;
+
+    @include break(large) {
+      padding-bottom: 14px;
+      padding-top: 14px;
+    }
   }
 
     .timezones-zone-acronym {

@@ -7,7 +7,9 @@
   background: $green;
   border: 0;
   border-bottom: 3px solid darken($green, 15%);
+  border-top: 2px solid transparent;
   color: $white;
+  cursor: pointer;
   font-size: 20px;
   margin: 0;
   padding: 12px 20px 10px 54px;
@@ -40,6 +42,12 @@
   width: 0;
 }
 
-.button:hover {
-  box-shadow: 0 0 10px blue(1);
+.button:hover,
+.button:focus {
+  box-shadow: 0 1px 3px darken($green, 20%);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: darken($green, 15%);
 }

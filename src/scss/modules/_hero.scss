@@ -14,7 +14,7 @@
     font-family: 'Proxima Nova';
     font-size: 24px;
     font-weight: 300;
-    margin: 0 40px 20px;
+    margin: 0 0 20px;
     padding: 0 20px;
     position: relative;
 
@@ -24,13 +24,18 @@
       margin-right: auto;
       max-width: $large;
     }
+
+    @include break(large) {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
   }
 
   .hero-preheadline::before,
   .hero-preheadline::after {
     border: 1px solid $blue;
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     right: calc(100% - 10px);
     top: 50%;
@@ -38,6 +43,7 @@
     width: 20px;
 
     @include break(medium) {
+      display: block;
       width: 50px;
     }
 
@@ -55,6 +61,7 @@
     font-family: 'Brandon Grotesque';
     font-size: 26px;
     font-weight: 400;
+    letter-spacing: 0.0625em;
     margin: 0 0 20px;
     padding: 0 20px;
     text-transform: uppercase;
@@ -65,9 +72,13 @@
       margin-right: auto;
       max-width: $large;
     }
+
+    @include break(large) {
+      padding-bottom: 20px;
+    }
   }
 
   .hero-terms {
     font-size: 14px;
-    opacity: 0.4;
+    opacity: 0.3;
   }
