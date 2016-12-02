@@ -4,6 +4,13 @@
 
 .footer {
   padding: 20px;
+
+  @include break(large) {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    max-width: $large;
+  }
 }
 
   .footer-list {
@@ -14,8 +21,7 @@
     padding: 0;
 
     @include break(large) {
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       width: 990px;
     }
   }
@@ -31,7 +37,11 @@
       text-transform: uppercase;
 
       @include break(medium) {
-        flex: 1 0 25%;
+        flex: 1 1 20%;
+      }
+
+      @include break(large) {
+        text-align: left;
       }
     }
 
@@ -56,5 +66,10 @@
 
     @include break(medium) {
       width: 140px;
+    }
+
+    @include break(large) {
+      flex: 3 0 10%;
+      padding: 0 10px;
     }
   }

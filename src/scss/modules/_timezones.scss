@@ -9,7 +9,7 @@
   @include break(large) {
     margin-left: auto;
     margin-right: auto;
-    width: 990px;
+    width: 700px;
   }
 }
 
@@ -25,9 +25,17 @@
       font-size: 16px;
       font-weight: 300;
       margin: 0;
+
+      @include break(large) {
+        font-size: 18px;
+      }
     }
 
     .timezones-zone-time {
       font-size: 18px;
       font-weight: 700;
+
+      @include break(large) {
+        font-size: 20px;
+      }
     }

@@ -12,7 +12,6 @@
   margin: 0;
   padding: 12px 20px 10px 54px;
   position: relative;
-  text-transform: uppercase;
   transition: all 0.2s ease-in-out;
 }
 
@@ -43,23 +42,4 @@
 
 .button:hover {
   box-shadow: 0 0 10px blue(1);
-}
-
-// Modifiers
-
-.button.mod-magnet {
-  @include border-radius(7px);
-  font-size: 17px;
-  padding: 12px 16px 10px 50px;
-}
-
-.button.mod-magnet::before {
-  height: 26px;
-  left: 12px;
-  width: 26px;
-}
-
-.button.mod-magnet::after {
-  border-width: 6px 0 6px 9px;
-  left: 22px;
 }

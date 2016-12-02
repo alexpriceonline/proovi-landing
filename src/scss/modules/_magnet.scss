@@ -5,23 +5,69 @@
 .magnet {
   background: $blue;
   color: $white;
-  padding: 20px;
+  padding: 30px 20px;
+  text-align: center;
+
+  @include break(large) {
+    background: $blue url('/images/checklist.png') no-repeat;
+    background-position: -500px;
+    background-size: 1200px auto;
+  }
 }
+
+  .magnet-banner {
+    background: $white;
+    color: $blue;
+    display: inline-block;
+    font-family: 'Brandon Grotesque';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto 20px;
+    padding: 7px 20px 6px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include break(medium) {
+      font-size: 20px;
+    }
+  }
 
   .magnet-title {
     font-family: 'Brandon Grotesque';
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 400;
-    margin: 0 0 20px;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     text-transform: uppercase;
 
     @include break(medium) {
-      font-size: 30px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 40px;
       max-width: $large;
+    }
+
+    @include break(large) {
+      font-size: 50px;
+    }
+  }
+
+  .magnet-subtitle {
+    font-family: 'Brandon Grotesque';
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 auto 20px;
+    opacity: 0.8;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include break(medium) {
+      font-size: 24px;
+      max-width: $large;
+    }
+
+    @include break(large) {
+      font-size: 30px;
     }
   }
 
@@ -36,26 +82,56 @@
     flex: 1 0 100%;
 
     @include break(small) {
-      flex: 1 0 50%;
+      flex: 1 1 33%;
+    }
+
+    @include break(medium) {
+      align-items: center;
+      display: flex;
     }
   }
 
+    .magnet-graphic-icon {
+      margin: 0 auto 20px;
+      max-height: 300px;
+      width: 80%;
+    }
+
   .magnet-content {
     flex: 1 0 100%;
-    margin: 0 0 10px;
+    margin: 0 0 20px;
+    padding-right: 10px;
+    text-align: left;
 
     @include break(small) {
       flex: 1 0 50%;
+    }
+
+    @include break(large) {
+      padding-right: 100px;
     }
   }
 
     .magnet-content-title {
       font-family: 'Proxima Nova';
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 300;
-      margin: 0 0 20px;
-      text-align: center;
+      margin: 0 0 5px;
+
+      @include break(medium) {
+        font-size: 30px;
+      }
     }
+
+    .magnet-content-subtitle {
+      color: $orange;
+      font-family: 'Brandon Grotesque';
+      font-size: 18px;
+      font-weight: 400;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+
 
     .magnet-content-list {
       list-style-type: none;
@@ -65,16 +141,37 @@
 
       .magnet-content-list-item {
         font-family: 'Proxima Nova';
+        font-size: 16px;
         font-weight: 300;
-        margin: 0 0 10px;
+        line-height: 18px;
+        margin: 0 0 16px;
         padding: 0 0 0 10px;
         position: relative;
+
+        @include break(medium) {
+          font-size: 17px;
+          line-height: 20px;
+        }
       }
 
       .magnet-content-list-item::before {
-        content: 'P';
-        left: -10px;
+        background: url('/images/proovi-p.png') no-repeat;
+        background-position: left center;
+        background-size: 16px;
+        content: '';
+        height: 16px;
+        left: -16px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        width: 16px;
       }
+
+  .magnet-terms {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0.4;
+    max-width: $medium;
+  }
