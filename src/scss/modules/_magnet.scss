@@ -19,7 +19,7 @@
     background: $white;
     color: $blue;
     display: inline-block;
-    font-family: 'Brandon Grotesque';
+    font-family: 'brandon-grotesque', sans-serif;
     font-size: 14px;
     font-weight: 400;
     margin: 0 auto 30px;
@@ -33,7 +33,7 @@
   }
 
   .magnet-title {
-    font-family: 'Brandon Grotesque';
+    font-family: 'brandon-grotesque', sans-serif;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.075em;
@@ -54,7 +54,7 @@
   }
 
   .magnet-subtitle {
-    font-family: 'Brandon Grotesque';
+    font-family: 'brandon-grotesque', sans-serif;
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 0.075em;
@@ -123,7 +123,7 @@
 
     .magnet-content-title {
       border-bottom: 1px solid white(0.5);
-      font-family: 'Proxima Nova';
+      font-family: 'proxima-nova', sans-serif;
       font-size: 26px;
       font-weight: 300;
       margin: 0 0 14px;
@@ -136,7 +136,7 @@
 
     .magnet-content-subtitle {
       color: $orange;
-      font-family: 'Brandon Grotesque';
+      font-family: 'brandon-grotesque', sans-serif;
       font-size: 18px;
       font-weight: 400;
       letter-spacing: 0.075em;
@@ -152,7 +152,7 @@
     }
 
       .magnet-content-list-item {
-        font-family: 'Proxima Nova';
+        font-family: 'proxima-nova', sans-serif;
         font-size: 16px;
         font-weight: 300;
         letter-spacing: 0.0625em;

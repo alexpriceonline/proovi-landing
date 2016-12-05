@@ -1,7 +1,7 @@
 {
-  "name": "StorySumoLanding",
+  "name": "ProoviLanding",
   "version": "1.0.0",
-  "description": "The StorySumo landing page",
+  "description": "The Proovi landing page",
   "author": "Alex Price <hi@alexpriceonline.com>",
   "contributors": [
     {
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexpriceonline/storysumo-landing.git"
+    "url": "https://github.com/alexpriceonline/proovi-landing.git"
   },
   "bugs": {
-    "url": "https://github.com/alexpriceonline/storysumo-landing/issues"
+    "url": "https://github.com/alexpriceonline/proovi-landing/issues"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
