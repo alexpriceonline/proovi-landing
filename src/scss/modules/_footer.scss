@@ -3,7 +3,9 @@
 // ==============================================
 
 .footer {
-  padding: 20px;
+  bottom: -20px;
+  padding: 40px 20px 0;
+  position: relative;
 
   @include break(large) {
     align-items: center;
@@ -27,11 +29,11 @@
   }
 
     .footer-list-item {
-      color: $blue;
+      color: $white;
       flex: 1 0 50%;
       font-family: 'brandon-grotesque', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 15px;
+      font-weight: 400;
       padding: 5px 0 10px;
       text-align: center;
       text-transform: uppercase;
@@ -45,19 +47,28 @@
       }
     }
 
+    .footer-list-item.mod-opacity {
+      opacity: 0.2;
+    }
+
       .footer-list-item-link {
-        border-bottom: 1px dashed blue(0.4);
-        color: $blue;
+        border-bottom: 1px solid white(0.4);
+        color: $white;
+        opacity: 0.2;
         text-decoration: none;
       }
 
       .footer-list-item-link:hover {
-        border-bottom: 1px solid blue();
+        border-bottom: 1px solid white();
+        opacity: 0.3;
       }
 
   .footer-logo {
     display: block;
     margin: auto;
+    opacity: 0.2;
+    position: relative;
+    top: -15px;
     width: 50%;
 
     @include break(small) {
@@ -71,5 +82,6 @@
     @include break(large) {
       flex: 3 0 10%;
       padding: 0 10px;
+      top: -5px;
     }
   }

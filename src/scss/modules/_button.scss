@@ -7,7 +7,6 @@
   background: $green;
   border: 0;
   border-bottom: 3px solid darken($green, 15%);
-  border-top: 2px solid transparent;
   color: $white;
   cursor: pointer;
   font-size: 20px;
@@ -50,4 +49,19 @@
 
 .button:active {
   background-color: darken($green, 15%);
+}
+
+// Modifers
+
+.button.mod-large {
+  font-size: 23px;
+  padding: 18px 40px 16px 74px;
+}
+
+.button.mod-large::before {
+  left: 22px;
+}
+
+.button.mod-large::after {
+  left: 34px;
 }
