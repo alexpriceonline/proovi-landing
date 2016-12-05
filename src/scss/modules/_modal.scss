@@ -1,0 +1,224 @@
+// ==============================================
+// Tingle modal content styles
+// ==============================================
+
+.tingle-modal-box__content {
+  color: $blue;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'brandon-grotesque', sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h2.lower {
+    font-family: 'proxima-nova', sans-serif;
+    text-transform: none;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 16px;
+    margin: 0;
+
+    &:not(:last-of-type) {
+      margin: 0 0 20px;
+    }
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $orange;
+  }
+}
+
+/* ----------------------------------------------------------- */
+/* == tingle v0.8.4 */
+/* ----------------------------------------------------------- */
+
+.tingle-modal * {
+  box-sizing: border-box;
+}
+
+.tingle-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  background: blue(0.8);
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+
+  -webkit-box-align: center;
+
+  -ms-flex-align: center;
+
+  align-items: center;
+}
+
+/* confirm and alerts
+-------------------------------------------------------------- */
+
+.tingle-modal--confirm .tingle-modal-box {
+  text-align: center;
+}
+
+/* modal
+-------------------------------------------------------------- */
+
+.tingle-modal--noClose {
+  cursor: default;
+}
+
+.tingle-modal--noClose .tingle-modal__close {
+  display: none;
+}
+
+.tingle-modal__close {
+  position: fixed;
+  top: 1vw;
+  right: 1vw;
+  z-index: 1000;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-size: 40px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.tingle-modal-box {
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: calc(100% - 30px);
+  border-radius: 4px;
+  background: #fff;
+  opacity: 1;
+  cursor: auto;
+  -webkit-transition: -webkit-transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform: scale(.8);
+  -ms-transform: scale(.8);
+  transform: scale(.8);
+
+  -ms-flex-negative: 0;
+
+  flex-shrink: 0;
+
+  @include break(medium) {
+    width: 80%;
+  }
+
+  @include break(large) {
+    width: 60%;
+  }
+}
+
+.tingle-modal-box__content {
+  padding: 1.5rem 1.5rem;
+
+  @include break(large) {
+    padding: 3rem 3rem;
+  }
+}
+
+
+.tingle-modal-box__footer {
+  padding: 1.5rem 2rem;
+  width: auto;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #f5f5f5;
+  cursor: auto;
+}
+
+.tingle-modal-box__footer::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.tingle-modal-box__footer--sticky {
+  position: fixed;
+  bottom: -200px; /* TODO : find a better way */
+  z-index: 10001;
+  opacity: 1;
+  -webkit-transition: bottom .3s ease-in-out .3s;
+  transition: bottom .3s ease-in-out .3s;;
+}
+
+/* state
+-------------------------------------------------------------- */
+
+.tingle-enabled {
+  overflow: hidden;
+  height: 100%;
+}
+
+.tingle-modal--visible .tingle-modal-box__footer {
+  bottom: 0;
+}
+
+.tingle-enabled .tingle-content-wrapper {
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+}
+
+.tingle-modal--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tingle-modal--visible .tingle-modal-box {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.tingle-modal--overflow {
+  padding-top: 5vh;
+}
