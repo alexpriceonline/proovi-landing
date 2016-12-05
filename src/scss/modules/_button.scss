@@ -54,14 +54,20 @@
 // Modifers
 
 .button.mod-large {
-  font-size: 23px;
-  padding: 18px 40px 16px 74px;
+  @include break(medium) {
+    font-size: 23px;
+    padding: 18px 40px 16px 74px;
+  }
 }
 
 .button.mod-large::before {
-  left: 22px;
+  @include break(medium) {
+    left: 22px;
+  }
 }
 
 .button.mod-large::after {
-  left: 34px;
+  @include break(medium) {
+    left: 34px;
+  }
 }
