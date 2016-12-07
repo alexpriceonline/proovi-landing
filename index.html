@@ -2,15 +2,17 @@
 <html lang="en">
 
   <head>
+    <!-- Typekit JS -->
     <script src="https://use.typekit.net/jho5zfd.js"></script>
     <script>try{Typekit.load({ async: false });}catch(e){}</script>
+    <!-- / Typekit JS -->
 
     <!-- Start of Async Drift Code -->
     <script>
     !function() {
       var t;
-      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
       t.factory = function(e) {
         return function() {
           var n;
@@ -20,8 +22,8 @@
         t[e] = t.factory(e);
       }), t.load = function(t) {
         var e, n, o, i;
-        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
         n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
       });
     }();
@@ -45,7 +47,20 @@
       content="Step by step masterclass on leveraging social proof for your
       business. Reserve your spot today to join Proovi and the team for
       this exclusive masterclass session"
-    >
+    />
+
+    <!--facebook opengraph tags-->
+    <meta property="fb:app_id" content="1276190639087482" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://proovi.io/" />
+    <meta property="og:title" content="Proovi :: Free Live Masterclass - Social Proof" />
+    <meta property="og:image" content="https://s3.amazonaws.com/proovi-assets/Facebook-mata-tag-image.png" />
+    <meta property="og:description"
+      content="Step by step masterclass on leveraging social proof for your
+      business. Reserve your spot today to join Proovi and the team for this
+      exclusive masterclass session"
+    />
+    <!--facebook opengraph tags-->
 
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -108,6 +123,13 @@
       <p class="hero-terms">
         There are only 100 spots, claim yours before they run out
       </p>
+
+      <time
+        class="hero-next"
+        datetime="2016-12-08 20:00"
+      >
+        Thursday 8th December
+      </time>
     </section>
 
     <section class="timezones">

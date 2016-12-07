@@ -5,7 +5,7 @@
 .hero {
   background: linear-gradient(0deg, $grey, $white);
   color: $blue;
-  padding: 0 20px 30px;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -80,5 +80,23 @@
 
   .hero-terms {
     font-size: 14px;
+    margin-bottom: 25px;
     opacity: 0.3;
+  }
+
+  .hero-next {
+    background: $white;
+    border-radius: 3px 3px 0 0;
+    display: block;
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: auto;
+    max-width: 700px;
+    padding: 15px 0 5px;
+    text-transform: uppercase;
+
+    @include break(medium) {
+      font-size: 22px;
+    }
   }
