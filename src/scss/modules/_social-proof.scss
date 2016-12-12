@@ -10,6 +10,7 @@
   line-height: 1.6em;
   margin: 0;
   padding: 30px 20px 24px;
+  position: relative;
   text-align: center;
 
   @include break(medium) {
@@ -23,6 +24,19 @@
     margin-right: auto;
     width: 740px;
   }
+}
+
+.social-proof::after {
+  border-color: $grey transparent transparent;
+  border-style: solid;
+  border-width: 7px 10px 0;
+  content: '';
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 0;
 }
 
   .social-proof-text {
