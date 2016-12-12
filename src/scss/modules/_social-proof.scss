@@ -1,0 +1,38 @@
+// ==============================================
+// Social Proof section styles
+// ==============================================
+
+.social-proof {
+  color: $blue;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 30px 20px 24px;
+  text-align: center;
+
+  @include break(medium) {
+    color: blue(0.9);
+    font-size: 22px;
+    padding: 40px 20px 30px;
+  }
+
+  @include break(large) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 740px;
+  }
+}
+
+  .social-proof-text {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  .social-proof-cite {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1em;
+    opacity: 0.6;
+  }
