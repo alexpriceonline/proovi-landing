@@ -4,7 +4,6 @@
 
 .footer {
   background-color: $blue;
-  bottom: -20px;
   padding: 40px 20px 0;
   position: relative;
   width: 100%;
@@ -13,7 +12,7 @@
     align-items: center;
     display: flex;
     margin: auto;
-    max-width: $large;
+    padding-bottom: 20px;
   }
 }
 
@@ -26,7 +25,7 @@
 
     @include break(large) {
       margin: 0 auto;
-      width: 990px;
+      width: 800px;
     }
   }
 
@@ -41,8 +40,8 @@
       text-transform: uppercase;
 
       @include break(medium) {
-        padding: 5px 0 10px;
         flex: 1 1 20%;
+        padding: 5px 0 10px;
       }
 
       @include break(large) {
@@ -91,8 +90,10 @@
     }
 
     @include break(large) {
-      flex: 3 0 10%;
+      flex: 1 0 10%;
+      max-width: 100px;
       padding: 0 10px;
       top: -5px;
+      width: auto;
     }
   }

@@ -16,7 +16,7 @@
   @include break(large) {
     margin-left: auto;
     margin-right: auto;
-    width: 990px;
+    max-width: 990px;
   }
 }
 
