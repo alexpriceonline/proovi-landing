@@ -1,0 +1,101 @@
+// ==============================================
+// Guarantee section styles
+// ==============================================
+
+.guarantee {
+  background: $grey;
+  color: $blue;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0 60px;
+  position: relative;
+
+  @include break(medium) {
+    justify-content: center;
+  }
+}
+
+.guarantee::after {
+  border-color: $blue transparent transparent;
+  border-style: solid;
+  border-width: 7px 10px 0;
+  content: '';
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 0;
+}
+
+  .guarantee-title {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 20px;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include break(medium) {
+      font-size: 30px;
+      font-weight: 400;
+      margin: 0 0 4px;
+      text-align: center;
+    }
+  }
+
+  .guarantee-subtitle {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    opacity: 0.7;
+    padding: 0 20px;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include break(medium) {
+      font-size: 18px;
+      margin: 0 0 30px;
+      text-align: center;
+    }
+  }
+
+  .guarantee-list {
+    flex: 1 0 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+
+    @include break(medium) {
+      flex: 1 0 50%;
+      max-width: 380px;
+    }
+  }
+
+    .guarantee-list-item {
+      font-family: 'proxima-nova', sans-serif;
+      font-size: 18px;
+      opacity: 0.9;
+      padding: 0 0 10px 7px;
+
+      @include break(medium) {
+        left: 20px;
+        padding-bottom: 20px;
+        position: relative;
+
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .guarantee-list-item::before {
+      content: '\f00c';
+      font-family: FontAwesome;
+      font-size: 24px;
+      left: -6px;
+      position: relative;
+      top: 2px;
+    }

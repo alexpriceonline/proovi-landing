@@ -60,6 +60,10 @@
 
       @include break(medium) {
         margin: 0 0 40px;
+
+        &:last-of-type {
+          margin: 0;
+        }
       }
     }
 
