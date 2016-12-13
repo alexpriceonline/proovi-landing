@@ -72,7 +72,7 @@
 
     @include break(medium) {
       flex: 1 0 50%;
-      max-width: 450px;
+      max-width: 480px;
       order: 0;
       padding: 40px 30px 40px 20px;
     }
@@ -97,7 +97,7 @@
       }
 
       @include break(medium) {
-        font-size: 22px;
+        font-size: 21px;
         letter-spacing: 0.07em;
       }
     }
