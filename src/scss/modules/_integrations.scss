@@ -1,0 +1,27 @@
+// ==============================================
+// Integrations section styles
+// ==============================================
+
+.integrations {
+  color: $blue;
+  // display: flex;
+  // flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+  .integrations-title {
+    font-family: 'brandon-grotesque', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include break(medium) {
+      font-size: 30px;
+      margin: 0 auto 40px;
+      max-width: 600px;
+    }
+  }
