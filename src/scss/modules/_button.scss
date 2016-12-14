@@ -86,3 +86,35 @@
     left: 34px;
   }
 }
+
+$cta-button-color: #f27721;
+
+.button.mod-cta {
+  background: $cta-button-color;
+  border-bottom: 3px solid darken($cta-button-color, 15%);
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+
+  @include break(small) {
+    margin: 0 auto;
+  }
+
+  @include break(medium) {
+    font-size: 24px;
+    padding: 16px 30px 14px;
+  }
+
+  .button-subtitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.6;
+    padding: 8px 0 0;
+    width: 100%;
+
+    @include break(medium) {
+      font-size: 16px;
+    }
+  }
+}
