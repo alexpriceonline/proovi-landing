@@ -132,22 +132,39 @@
   opacity: 1;
   padding-top: 14px;
 
+  @include break(medium) {
+    margin-bottom: 5px;
+  }
+
   .cta-table-list {
     border-bottom: 0;
   }
 
-    .cta-table-list-title {
-      flex: 1 0 100%;
-      font-size: 20px;
-      margin-bottom: 8px;
-      opacity: 0.8;
-      text-align: center;
-    }
+  .cta-table-list-title {
+    flex: 1 0 100%;
+    font-size: 20px;
+    margin-bottom: 8px;
+    opacity: 1;
+    text-align: center;
 
-    .cta-table-list-cell {
-      flex: 1 0 100%;
-      text-align: center;
+    @include break(medium) {
+      flex: 1 0 30%;
+      text-align: left;
     }
+  }
+
+  .cta-table-list-cell {
+    flex: 1 1 100%;
+    text-align: center;
+
+    @include break(medium) {
+      flex: 1 0 50%;
+      font-size: 20px;
+      position: relative;
+      text-align: right;
+      top: 2px;
+    }
+  }
 }
 
 .cta-table-list-cell.mod-strike {
