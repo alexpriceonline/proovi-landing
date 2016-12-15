@@ -6,6 +6,11 @@
   color: $blue;
   padding: 50px 20px;
   position: relative;
+
+  @include break(large) {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
 }
 
 .integrations::after {
@@ -42,7 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
   }
 
@@ -56,6 +61,14 @@
       flex: 0 0 calc(25% - 20px);
       justify-content: center;
       margin: 10px;
+
+      @include break(medium) {
+        flex: 0 0 calc(20% - 20px);
+      }
+
+      @include break(large) {
+        flex: 0 0 calc(10% - 20px);
+      }
 
       i {
         font-size: 40px;
@@ -71,11 +84,45 @@
       content: '';
       float: left;
       padding-top: 100%;
+
+      @include break(medium) {
+        padding-top: 50%;
+      }
+
+      @include break(large) {
+        padding-top: 100%;
+      }
     }
+
+  .integrations-text {
+    color: $blue;
+    font-family: 'proxima-nova', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.3;
+    padding: 0;
+    text-align: center;
+  }
 
 // Modifiers
 
 .integrations-list-item.mod-ghost {
+  img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.integrations-list-item.mod-instabuilder {
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.integrations-list-item.mod-kajabi {
   img {
     height: 35px;
     width: 35px;
