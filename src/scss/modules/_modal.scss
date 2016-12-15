@@ -2,6 +2,19 @@
 // Tingle modal content styles
 // ==============================================
 
+.modal-video {
+  height: 50vw !important;
+  width: 100% !important;
+
+  @include break(medium) {
+    height: 45vw !important;
+  }
+
+  @include break(large) {
+    height: 33.75vw !important;
+  }
+}
+
 .tingle-modal-box__content {
   color: $blue;
 
