@@ -61,6 +61,7 @@
       flex: 0 0 calc(25% - 20px);
       justify-content: center;
       margin: 10px;
+      position: relative;
 
       @include break(medium) {
         flex: 0 0 calc(20% - 20px);
@@ -72,11 +73,19 @@
 
       i {
         font-size: 40px;
+        pointer-events: none;
       }
 
       img {
         height: 38px;
+        pointer-events: none;
         width: 38px;
+      }
+
+      &:hover {
+        .integrations-list-item-tooltip {
+          opacity: 0.3;
+        }
       }
     }
 
@@ -93,6 +102,25 @@
         padding-top: 100%;
       }
     }
+
+      .integrations-list-item-tooltip {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        color: $blue;
+        display: none;
+        font-family: 'proxima-nova', sans-serif;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        top: -26px;
+        transform: translateX(-50%);
+        transition: opacity 0.2s ease-in-out;
+        white-space: nowrap;
+
+        @include break(large) {
+          display: block;
+        }
+      }
 
   .integrations-text {
     color: $blue;
@@ -126,5 +154,12 @@
   img {
     height: 35px;
     width: 35px;
+  }
+}
+
+.integrations-list-item.mod-bottom {
+  .integrations-list-item-tooltip {
+    bottom: -26px;
+    top: auto;
   }
 }
