@@ -7,7 +7,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function () {
     gulp.src('src/scss/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('public/css'));
 });
 
 // Watch for file changes
